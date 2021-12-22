@@ -1,0 +1,20 @@
+<template>
+    <lightning-card title="Calculator">
+        <div class="slds-m-left_medium">
+                <lightning-input type="number" label="Enter First Number" class="input1"></lightning-input>
+                <lightning-input type="number" label="Enter Second Number" class="input2"></lightning-input>
+                <hr>
+                <lightning-button label="+" onclick={sumevent}></lightning-button>
+                <lightning-button label="-" onclick={subevent} class="slds-m-left_medium"></lightning-button>
+                <lightning-button label="*" onclick={mulevent} class="slds-m-left_medium"></lightning-button>
+                <lightning-button label="/" onclick={divevent} class="slds-m-left_medium"></lightning-button>
+                <lightning-button label="%" onclick={modevent} class="slds-m-left_medium"></lightning-button>
+                <hr/>
+                <p style="color: rgba(88, 8, 119, 0.904);">sum of {data.number1} and {data.number2} :<b style="color: crimson;"> {data.sum} </b> </p>
+                <p style="color: blue;">sum of {data.number1} and {data.number2} : {data.sub} </p>
+                <p style="color: brown;">sum of {data.number1} and {data.number2} : {data.mul} </p>
+                <p style="color: chartreuse;">sum of {data.number1} and {data.number2} : {data.div} </p>
+                <p style="color: cornflowerblues;">sum of {data.number1} and {data.number2} : {data.mod} </p>
+        </div>
+    </lightning-card>
+</template>
